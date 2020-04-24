@@ -1,0 +1,30 @@
+{
+  "name": "grpc-node",
+  "version": "0.0.1",
+  "description": "gRPC Node.js Example",
+  "main": "index.js",
+  "scripts": {
+    "server": "node grpc/notes/server",
+    "notes:get": "node grpc/notes/client/get-notes.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saefullohmaslul/gRPC-Node-Example.git"
+  },
+  "keywords": [
+    "grpc",
+    "nodejs",
+    "microservices"
+  ],
+  "author": "Saefulloh Maslul",
+  "homepage": "https://github.com/saefullohmaslul/gRPC-Node-Example#readme",
+  "bugs": {
+    "url": "https://github.com/saefullohmaslul/gRPC-Node-Example/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.4",
+    "grpc": "^1.24.2",
+    "uuid": "^7.0.3"
+  }
+}
