@@ -9,10 +9,10 @@ const getNotes = async () => {
       })
     })
 
-    console.log(notes)
+    return notes
   } catch (error) {
-    console.log(error)
+    throw error
   }
 }
 
-getNotes()
+module.exports = getNotes
