@@ -1,3 +1,3 @@
 module.exports = {
-  exception: require('./exception')
+  errorHandler: require('./error-handler')
 }

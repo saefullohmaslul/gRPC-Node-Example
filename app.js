@@ -1,10 +1,10 @@
 const express = require('express')
 const routes = require('./routes')
-const middleware = require('./middlewares')
+const { errorHandler } = require('./middlewares')
 
 const app = express()
 
 app.use('/', routes)
-middleware.exception.errorHandler(app)
+errorHandler.implement(app)
 
 module.exports = app

@@ -1,6 +1,6 @@
-class Exception {
-  errorHandler(server) {
-    server.use((err, req, res, next) => {
+class ErrorHandler {
+  implement(app) {
+    app.use((err, req, res, next) => {
       res.status(500).json({
         status: 500,
         flag: 'INTERNAL_SERVER_ERROR',
@@ -10,4 +10,4 @@ class Exception {
   }
 }
 
-module.exports = new Exception()
+module.exports = new ErrorHandler()
