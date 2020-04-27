@@ -14,14 +14,14 @@ const list = (call, callback) => {
 }
 
 
-const server = new grpc.Server()
-server.addService(notesPackageDefinition.NoteService.service, {
+const notesServer = new grpc.Server()
+notesServer.addService(notesPackageDefinition.NoteService.service, {
   list
 })
 
-server.bind(
+notesServer.bind(
   '0.0.0.0:50051',
   grpc.ServerCredentials.createInsecure()
 )
-server.start()
-console.log('Server running at http://localhost:50051')
+
+module.exports = notesServer
