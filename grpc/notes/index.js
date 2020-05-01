@@ -1,5 +1,5 @@
 const grpc = require('grpc')
-const { notesPackageDefinition } = require('../..')
+const { notesPackageDefinition } = require('..')
 
 const list = (call, callback) => {
   try {
