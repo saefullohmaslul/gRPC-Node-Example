@@ -6,4 +6,4 @@ app.listen(5000, () => {
 })
 
 notesServer.start()
-console.log('Server running at http://localhost:50051')
+console.log('gRPC Server running at http://localhost:50051')

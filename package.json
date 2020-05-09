@@ -4,7 +4,6 @@
   "description": "gRPC Node.js Example",
   "main": "index.js",
   "scripts": {
-    "server": "node grpc/notes/server",
     "start": "node ."
   },
   "repository": {
