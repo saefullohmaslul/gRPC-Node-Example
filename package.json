@@ -1,11 +1,10 @@
 {
-  "name": "grpc-node",
+  "name": "grpc-nodejs-example",
   "version": "0.0.1",
   "description": "gRPC Node.js Example",
   "main": "index.js",
   "scripts": {
-    "server": "node grpc/notes/server",
-    "notes:get": "node grpc/notes/client/get-notes.js"
+    "start": "node ."
   },
   "repository": {
     "type": "git",
